@@ -1,55 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aquinas Ikau</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aquinas Ikau | IT Engineer Support & Administrator</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header>
-    <h1>Aquinas Ikau Anak Geoffery</h1>
-    <p>IT Engineer Support & Administrator</p>
+<button id="darkModeToggle">🌙 Dark Mode</button>
+
+<header class="hero">
+    <div class="hero-content">
+        <h1>Aquinas Ikau Anak Geoffery</h1>
+        <p>IT Engineer Support & Administrator</p>
+
+        <div class="hero-buttons">
+            <a href="https://www.linkedin.com/in/aquinas-ikau-a-668b39130/" target="_blank">
+                LinkedIn
+            </a>
+        </div>
+    </div>
 </header>
 
 <section>
     <h2>About Me</h2>
 
     <p>
-        Passionate IT professional with experience in
-        Microsoft 365, Network Support, User Support,
-        Infrastructure Management and Vendor Coordination.
+        IT Engineer Support & Administrator with experience in end-user support,
+        Microsoft 365 administration, network troubleshooting, IT infrastructure,
+        vendor coordination, and operational support.
     </p>
 </section>
 
 <section>
     <h2>Technical Skills</h2>
 
-    <ul>
-        <li>Microsoft 365</li>
-        <li>Network Troubleshooting</li>
-        <li>LAN / WAN</li>
-        <li>Excel Automation</li>
-        <li>Power Automate</li>
-        <li>IT Asset Management</li>
-    </ul>
+    <div class="skill">
+        <span>Microsoft 365</span>
+        <div class="bar">
+            <div style="width:90%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Network Troubleshooting</span>
+        <div class="bar">
+            <div style="width:85%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Excel Automation</span>
+        <div class="bar">
+            <div style="width:80%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Power Automate</span>
+        <div class="bar">
+            <div style="width:65%"></div>
+        </div>
+    </div>
 </section>
 
 <section>
     <h2>Projects</h2>
 
-    <ul>
-        <li>Network Port Utilization Dashboard</li>
-        <li>IT Asset Tracking System</li>
-        <li>Vendor Deployment Coordination</li>
-    </ul>
+    <div class="card">
+        <h3>Network Port Utilization Dashboard</h3>
+        <p>Excel automation for infrastructure planning and utilization monitoring.</p>
+    </div>
+
+    <div class="card">
+        <h3>IT Asset Tracking</h3>
+        <p>Centralized asset inventory and lifecycle management.</p>
+    </div>
+
+    <div class="card">
+        <h3>Vendor Coordination</h3>
+        <p>Deployment, testing, commissioning and project support activities.</p>
+    </div>
+
+</section>
+
+<section>
+    <h2>Contact</h2>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/aquinas-ikau-a-668b39130/" target="_blank">
+            Connect with me
+        </a>
+    </p>
+
 </section>
 
 <footer>
-    <p>Â© Aquinas Ikau Anak Geoffery</p>
+    © 2026 Aquinas Ikau Anak Geoffery
 </footer>
+
+<script>
+const toggleBtn = document.getElementById("darkModeToggle");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        toggleBtn.innerHTML = "☀️ Light Mode";
+    }else{
+        toggleBtn.innerHTML = "🌙 Dark Mode";
+    }
+});
+</script>
 
 </body>
 </html>
